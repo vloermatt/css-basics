@@ -51,6 +51,9 @@ const SideBar: React.FC = (props) => {
           <h1 className="sideLink" onClick={() => directTo('/color')}>
             Color
           </h1>
+          <h1 className="sideLink" onClick={() => directTo('/opacity')}>
+            Opacity
+          </h1>
         </div>
         <ContentWrapper>{children}</ContentWrapper>
       </div>
