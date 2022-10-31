@@ -33,7 +33,9 @@ const SideBar: React.FC = (props) => {
           <h1 className="sideLink" onClick={() => directTo('/position')}>
             Position
           </h1>
-          <h1 className="sideLink">Float</h1>
+          <h1 className="sideLink" onClick={() => directTo('/float')}>
+            Float
+          </h1>
           <h1 className="sideLink" onClick={() => directTo('/padding')}>
             Padding
           </h1>

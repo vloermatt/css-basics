@@ -26,7 +26,10 @@ const AsyncPosition = Loadable({
   loader: () => import('../containers/Basics/Position'),
   loading: Loading,
 });
-
+const AsyncFloat = Loadable({
+  loader: () => import('../containers/Basics/Float'),
+  loading: Loading,
+});
 const AsyncPadding = Loadable({
   loader: () => import('../containers/Basics/Padding'),
   loading: Loading,
@@ -64,10 +67,15 @@ const PublicRoutes = [
     exact: true,
   },
   {
+    title: 'Float',
+    path: '/float',
+    component: AsyncFloat,
+    exact: true,
+  },
+  {
     title: 'Padding',
     path: '/padding',
     component: AsyncPadding,
-    exact: true,
   },
 ];
 
