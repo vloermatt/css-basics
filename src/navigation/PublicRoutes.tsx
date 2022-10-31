@@ -50,6 +50,10 @@ const AsyncColor = Loadable({
   loader: () => import('../containers/Basics/Color'),
   loading: Loading,
 });
+const AsyncFlexDirection = Loadable({
+  loader: () => import('../containers/Basics/FlexDirection'),
+  loading: Loading,
+});
 const AsyncOpacity = Loadable({
   loader: () => import('../containers/Basics/Opacity'),
   loading: Loading,
@@ -116,6 +120,11 @@ const PublicRoutes = [
     title: 'Color',
     path: '/color',
     component: AsyncColor,
+  },
+  {
+    title: 'Flex direction',
+    path: '/flex-direction',
+    component: AsyncFlexDirection,
   },
   {
     title: 'Opacity',
