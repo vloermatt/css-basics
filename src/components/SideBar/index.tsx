@@ -6,7 +6,7 @@ import './styles.css';
 
 const ContentWrapper = styled.div`
   display: inline-block;
-  background: #EDFDFB;
+  background: #edfdfb;
   position: absolute;
   left: 15%;
   height: 100%;
@@ -15,26 +15,32 @@ const ContentWrapper = styled.div`
 `;
 
 const SideBar: React.FC = (props) => {
-    const { children } = props;
+  const { children } = props;
 
-    const history = useHistory();
+  const history = useHistory();
 
-    const directTo = (path: string) => {
-        history.push(path);
-    }
+  const directTo = (path: string) => {
+    history.push(path);
+  };
 
-    return (
-        <Fragment>
-        <div>
-            <div className="sideBar">
-                <h1 className="sideLink" onClick={() => directTo('/display')}>Display</h1>
-                <h1 className="sideLink" onClick={() => directTo('/position')}>Position</h1>
-                <h1 className="sideLink">Float</h1>
-            </div>
-            <ContentWrapper>{children}</ContentWrapper>
+  return (
+    <Fragment>
+      <div>
+        <div className="sideBar">
+          <h1 className="sideLink" onClick={() => directTo('/display')}>
+            Display
+          </h1>
+          <h1 className="sideLink" onClick={() => directTo('/position')}>
+            Position
+          </h1>
+          <h1 className="sideLink" onClick={() => directTo('/float')}>
+            Float
+          </h1>
         </div>
-        </Fragment>
-    );
-}
+        <ContentWrapper>{children}</ContentWrapper>
+      </div>
+    </Fragment>
+  );
+};
 
 export default SideBar;
