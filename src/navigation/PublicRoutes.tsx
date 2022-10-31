@@ -38,6 +38,10 @@ const AsyncTextAlign = Loadable({
   loader: () => import('../containers/Basics/TextAlign'),
   loading: Loading,
 });
+const AsyncZIndex = Loadable({
+  loader: () => import('../containers/Basics/ZIndex'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -85,6 +89,11 @@ const PublicRoutes = [
     title: 'Text Align',
     path: '/text-align',
     component: AsyncTextAlign,
+  },
+  {
+    title: 'Z Index',
+    path: '/Z-index',
+    component: AsyncZIndex,
   },
 ];
 
