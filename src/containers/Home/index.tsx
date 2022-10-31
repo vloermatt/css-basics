@@ -1,7 +1,7 @@
 import React from 'react';
 /** Styling */
 import './styles.css';
-import { Heading, TextCode, Text, Box } from '../../themes/styledComponents';
+import { Heading, Text, Box } from '../../themes/styledComponents';
 
 const Home: React.FC = () => {
   return (
