@@ -34,6 +34,10 @@ const AsyncPadding = Loadable({
   loader: () => import('../containers/Basics/Padding'),
   loading: Loading,
 });
+const AsyncTextAlign = Loadable({
+  loader: () => import('../containers/Basics/TextAlign'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -76,6 +80,11 @@ const PublicRoutes = [
     title: 'Padding',
     path: '/padding',
     component: AsyncPadding,
+  },
+  {
+    title: 'Text Align',
+    path: '/text-align',
+    component: AsyncTextAlign,
   },
 ];
 

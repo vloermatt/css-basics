@@ -39,6 +39,9 @@ const SideBar: React.FC = (props) => {
           <h1 className="sideLink" onClick={() => directTo('/padding')}>
             Padding
           </h1>
+          <h1 className="sideLink" onClick={() => directTo('/text-align')}>
+            Text Align
+          </h1>
         </div>
         <ContentWrapper>{children}</ContentWrapper>
       </div>
