@@ -32,3 +32,15 @@ export const TextAlignTypes = {
   CENTER: 'center',
   JUSTIFY: 'justify',
 };
+
+export const Cursors = {
+  DEFAULT: 'default',
+  POINTER: 'pointer',
+  TEXT: 'text',
+  WAIT: 'wait',
+  HELP: 'help',
+  PROGRESS: 'progress',
+  CROSSHAIR: 'crosshair',
+  MOVE: 'move',
+  URL: 'url',
+};
