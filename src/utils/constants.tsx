@@ -25,3 +25,10 @@ export const PaddingTypes = {
   BOTTOM: { label: 'bottom', css: '0 0 30px 0' },
   LEFT: { label: 'left', css: '0 0 0 30px' },
 };
+
+export const TextAlignTypes = {
+  LEFT: 'left',
+  RIGHT: 'right',
+  CENTER: 'center',
+  JUSTIFY: 'justify',
+};
