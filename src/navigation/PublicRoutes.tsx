@@ -38,6 +38,10 @@ const AsyncTextAlign = Loadable({
   loader: () => import('../containers/Basics/TextAlign'),
   loading: Loading,
 });
+const AsyncCursors = Loadable({
+  loader: () => import('../containers/Basics/Cursor'),
+  loading: Loading,
+});
 const AsyncZIndex = Loadable({
   loader: () => import('../containers/Basics/ZIndex'),
   loading: Loading,
@@ -94,6 +98,11 @@ const PublicRoutes = [
     title: 'Z Index',
     path: '/Z-index',
     component: AsyncZIndex,
+  },
+  {
+    title: 'Cursor',
+    path: '/cursor',
+    component: AsyncCursors,
   },
 ];
 
