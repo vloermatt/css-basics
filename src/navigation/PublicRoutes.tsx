@@ -42,6 +42,10 @@ const AsyncCursors = Loadable({
   loader: () => import('../containers/Basics/Cursor'),
   loading: Loading,
 });
+const AsyncZIndex = Loadable({
+  loader: () => import('../containers/Basics/ZIndex'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -89,6 +93,11 @@ const PublicRoutes = [
     title: 'Text Align',
     path: '/text-align',
     component: AsyncTextAlign,
+  },
+  {
+    title: 'Z Index',
+    path: '/Z-index',
+    component: AsyncZIndex,
   },
   {
     title: 'Cursor',

@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Button, TextCode } from '../../../themes/styledComponents';
 import { TextAlignTypes } from '../../../utils/constants';
@@ -25,11 +25,9 @@ const Padding = () => {
           </Button>
         );
       })}
-      <Center width="100%" height="100px">
-        <Box style={{ border: '1px solid darkblue', textAlign: textAlignType }}>
-          <Box bg="blue" boxSize="50px" />
-        </Box>
-      </Center>
+      <Box width="100%" height="100px" border="1px solid darkblue" textAlign={textAlignType} padding="10px">
+        <Text width="100%">The quick brown fox jump jumps over the something.</Text>
+      </Box>
     </Box>
   );
 };

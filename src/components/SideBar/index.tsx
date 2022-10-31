@@ -45,6 +45,9 @@ const SideBar: React.FC = (props) => {
           <h1 className="sideLink" onClick={() => directTo('/cursor')}>
             Cursor
           </h1>
+          <h1 className="sideLink" onClick={() => directTo('/z-index')}>
+            Z Index
+          </h1>
         </div>
         <ContentWrapper>{children}</ContentWrapper>
       </div>
