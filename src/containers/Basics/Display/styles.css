@@ -1,0 +1,11 @@
+.active {
+    background-color: #7bdff2;
+    color: black;
+}
+
+li {
+    margin-top: 10px;
+}
+.morph {
+    background-color: darkorchid;
+}

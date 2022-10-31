@@ -1,0 +1,19 @@
+.sideBar {
+    display: inline-block;
+    background-color: #403f4c;
+    width: 15vw;
+    height: 100%;
+    position: absolute;
+}
+
+.sideLink {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.sideLink:hover {
+    margin-left: 30px;
+}
