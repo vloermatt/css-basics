@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 /** Styling */
 import { Heading, TextCode, Text, Box, Button } from '../../../themes/styledComponents';
 import { Cursors, FloatTypes } from '../../../utils/constants';
-import { BoxBox } from '../Display/styles';
 
 const Cursor: React.FC = () => {
-  // states
-  const [cursor, setCursor] = useState<any>(Cursors.DEFAULT);
   return (
     <React.Fragment>
       <Box
@@ -27,12 +24,12 @@ const Cursor: React.FC = () => {
               key={type.valueOf()}
               id={type.valueOf()}
               style={{ cursor: type, marginTop: '20px', marginLeft: type !== FloatTypes.LEFT ? '20px' : 0 }}
-              onClick={() => setCursor(type.valueOf())}
             >
               :{type.valueOf()}
             </Button>
           );
         })}
+        <Text style={{ marginTop: '50px' }}>Hover over the buttons!</Text>
       </Box>
     </React.Fragment>
   );

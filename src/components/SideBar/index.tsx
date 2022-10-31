@@ -48,6 +48,9 @@ const SideBar: React.FC = (props) => {
           <h1 className="sideLink" onClick={() => directTo('/z-index')}>
             Z Index
           </h1>
+          <h1 className="sideLink" onClick={() => directTo('/color')}>
+            Color
+          </h1>
         </div>
         <ContentWrapper>{children}</ContentWrapper>
       </div>

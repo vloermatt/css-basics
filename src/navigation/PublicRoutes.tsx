@@ -46,6 +46,10 @@ const AsyncZIndex = Loadable({
   loader: () => import('../containers/Basics/ZIndex'),
   loading: Loading,
 });
+const AsyncColor = Loadable({
+  loader: () => import('../containers/Basics/Color'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -103,6 +107,11 @@ const PublicRoutes = [
     title: 'Cursor',
     path: '/cursor',
     component: AsyncCursors,
+  },
+  {
+    title: 'Color',
+    path: '/color',
+    component: AsyncColor,
   },
 ];
 
