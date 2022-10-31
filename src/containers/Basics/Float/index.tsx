@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 /** Styling */
-import { Heading, TextCode, Text, Box, Button, Row } from '../../../themes/styledComponents';
+import { Heading, TextCode, Text, Box, Button } from '../../../themes/styledComponents';
 import { FloatTypes } from '../../../utils/constants';
-import { BoxBox, BoxInline } from '../Display/styles';
+import { BoxBox } from '../Display/styles';
 
 const Float: React.FC = () => {
   // states
   const [floatType, setFloatType] = useState<any>(FloatTypes.LEFT);
-  React.useEffect(() => {
-    console.log(floatType);
-  }, [floatType]);
   return (
     <React.Fragment>
       <Box

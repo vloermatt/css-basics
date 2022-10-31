@@ -38,6 +38,10 @@ const AsyncTextAlign = Loadable({
   loader: () => import('../containers/Basics/TextAlign'),
   loading: Loading,
 });
+const AsyncCursors = Loadable({
+  loader: () => import('../containers/Basics/Cursor'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -85,6 +89,11 @@ const PublicRoutes = [
     title: 'Text Align',
     path: '/text-align',
     component: AsyncTextAlign,
+  },
+  {
+    title: 'Cursor',
+    path: '/cursor',
+    component: AsyncCursors,
   },
 ];
 
