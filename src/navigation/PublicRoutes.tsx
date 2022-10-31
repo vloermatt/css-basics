@@ -54,6 +54,10 @@ const AsyncFlexDirection = Loadable({
   loader: () => import('../containers/Basics/FlexDirection'),
   loading: Loading,
 });
+const AsyncOpacity = Loadable({
+  loader: () => import('../containers/Basics/Opacity'),
+  loading: Loading,
+});
 
 const PublicRoutes = [
   {
@@ -121,6 +125,11 @@ const PublicRoutes = [
     title: 'Flex direction',
     path: '/flex-direction',
     component: AsyncFlexDirection,
+  },
+  {
+    title: 'Opacity',
+    path: '/opacity',
+    component: AsyncOpacity,
   },
 ];
 

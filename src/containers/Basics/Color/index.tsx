@@ -18,6 +18,9 @@ const Color: React.FC = () => {
           The following table lists the basic <TextCode>color</TextCode> keywords defined in CSS3 specification.
         </Text>
         <Box>
+          <HStack>
+            <Box style={{ border: '2px solid black', width: 200, height: 50 }}>Name</Box>
+          </HStack>
           {Object.keys(BasicColors).map((col) => (
             <HStack spacing="10">
               <Box style={{ border: '2px solid black', width: 200, height: 50, backgroundColor: col }}>{col}</Box>
