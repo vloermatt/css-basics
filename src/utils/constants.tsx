@@ -18,3 +18,10 @@ export const FloatTypes = {
   NONE: 'none',
   INHERIT: 'inherit',
 };
+
+export const PaddingTypes = {
+  TOP: { label: 'top', css: '30px 0 0 0' },
+  RIGHT: { label: 'right', css: '0 30px 0 0' },
+  BOTTOM: { label: 'bottom', css: '0 0 30px 0' },
+  LEFT: { label: 'left', css: '0 0 0 30px' },
+};
